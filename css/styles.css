@@ -1,0 +1,77 @@
+/**************************************TAG SELECTORS**************************************/
+body{
+    margin: 0;
+    text-align: center;
+    background-color: #F7FBFC;
+}
+hr{
+    border-color: grey;
+    border-style: dotted none none none;
+    border-width: 5px;
+    width: 25%;
+  }
+
+h1 {
+    color: #DAA520;
+    font-size: 5.625rem;
+    font-family: 'Parisienne', cursive;
+    margin: 50px auto 0 auto;
+}
+h2 {
+    font-family: 'Playball', cursive;
+    
+}
+h3{
+    font-size: 2.5rem;
+    color: #FF2E63;
+    font-weight: normal;
+}
+h4{
+    font-family: 'Inconsolata', monospace;
+    margin: 50px auto 0 auto;
+    color: #6A2C70;
+}
+a:hover{
+    background-color: blue;
+}
+/**************************************CLASS SELECTORS**************************************/
+.beginning-container{
+    background-color: #BAD7DF;
+    position: relative;
+    padding-top: 100px;
+}
+.developer{
+    text-decoration: underline;
+}
+.sun-img{
+    width: 100px;
+    length: 100px;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+}
+.global-network-img{
+}
+.top-right-cloud-data-img{
+    position: relative;
+    bottom: 400px;
+    right: 100px;
+}
+.bottom-right-cloud-data-img{
+    position: relative;
+    bottom: 200px;
+    right: 100px;
+}
+.left-cloud-data-img{
+    position: relative;
+    left: 80px;
+    bottom: 300px;
+}
+.middle-container{
+}
+.circular{
+    border-radius: 100%;
+}
+.end-container{
+    background-color: #444F5A;
+}
