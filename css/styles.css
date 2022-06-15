@@ -1,16 +1,50 @@
-/**************************************TAG SELECTORS**************************************/
+/******General Body*************/
 body{
-    margin: 0;
+    margin: auto;
     text-align: center;
-    background-color: #F7FBFC;
 }
-hr{
-    border-color: grey;
-    border-style: dotted none none none;
-    border-width: 5px;
-    width: 25%;
-  }
+p {
+    line-height: 2;
+}
+/**********Images**********/
+.sun-img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 200px;
+    top: 30px;
+}
+.global-network-img{
+    position: relative;
+    display: block;
+    margin: auto;
+}
+/*****Beginnning******/
+#greeting{
+    margin-top: 50px;
+}
+.beginning-container{
+    background-color: #355C7D;
+    padding-top: 200px;
+}
+/**********About-me************/
 
+#about-me{
+    background-color: #E3FDFD;
+    padding-top: 100px;
+}
+#experiences{
+    background-color: #E4F9F5;
+}
+#abilities{
+    background-color: #E3FDFD;
+}
+#projects{
+    background-color: #E4F9F5;
+}
+#contact{
+    background-color: #E3FDFD;
+}
 h1 {
     color: #DAA520;
     font-size: 5.625rem;
@@ -32,46 +66,43 @@ h4{
     color: #6A2C70;
 }
 a:hover{
-    background-color: blue;
+    color: #EBEDF0;
+}
+a{
+    color: #2D4059;
+    margin: 10px 20px;
+    text-decoration: none;
 }
 /**************************************CLASS SELECTORS**************************************/
-.beginning-container{
-    background-color: #BAD7DF;
-    position: relative;
-    padding-top: 100px;
+.container-fluid{
+    padding: 3% 15%;
 }
 .developer{
     text-decoration: underline;
 }
-.sun-img{
-    width: 100px;
-    length: 100px;
-    position: absolute;
-    left: 300px;
-    top: 50px;
+.hr1{
+    border-color: lightgray;
+    border-style: dotted none none none;
+    border-width: 5px;
+    width: 25%;
+    margin: 100px auto;
 }
-.global-network-img{
-}
-.top-right-cloud-data-img{
-    position: relative;
-    bottom: 400px;
-    right: 100px;
-}
-.bottom-right-cloud-data-img{
-    position: relative;
-    bottom: 200px;
-    right: 100px;
-}
-.left-cloud-data-img{
-    position: relative;
-    left: 80px;
-    bottom: 300px;
-}
-.middle-container{
+.hr2{
+    width: 50%;
+    border-style: double none none none;
+    border-color: lightgrey;
+    margin: 50px auto;
 }
 .circular{
     border-radius: 100%;
+    padding-top: 50px
 }
 .end-container{
     background-color: #444F5A;
+    padding: 50px 0 20px;
+}
+.copyright{
+    color: #2D4059;
+    font-size: 0.90rem;
+    padding: 20px 0;
 }
