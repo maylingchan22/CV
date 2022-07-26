@@ -15,7 +15,7 @@
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Parisienne&family=Playball&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Noto+Sans&display=swap" rel="stylesheet">
   <!--CSS Stylesheets-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -28,6 +28,7 @@
 </head>
 
 <body>
+<!--Navigation Bar-->
   <div id="navigation">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="">May Chan</a>
@@ -37,32 +38,42 @@
       <div class="collapse navbar-collapse" id="navigation1">
           <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#experiences">Experiences</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="">Download</a>
+                <a class="nav-link" href="#abilities">Abilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
         </div>
     </nav>
   </div>
   <div class="beginning-container container-fluid">
+<!--------------------First Page Images--------------------->
     <img class="sun-img" src="images/sun.png" alt="sun-image">
+<!-----------------------Beginnning------------------------->
     <h4 id="greeting">Hello, my name is</h4> 
-    <h1> May Chan.</h1>
-    <p><em><h3>A <span class="developer">Software Developer.</span></h3></em></p>
+    <h1 class="name-text"> May Chan.</h1>
+    <p><em><h3 class="job-text">A <span class="developer">Software Developer.</span></h3></em></p>
     <p>Proficient in HTML and Python. I'm a system anaylst in Enzo Life Sciences.</p>
     <img class="global-network-img" src="images/global-network.png" alt="global-network-image">
   </div>
-  <div id="about-me" class="row">
+
+<!-----------------------About Me-------------------------->
+  <div id="about-me" class="row colored-blue-section">
       <div class="col-lg-6">
-        <h2><strong> 01. About Me</strong></h2>
+        <h2 class="heading-text"><strong> 01. About Me</strong></h2>
         <p>Hello! My name is May and I enjoy creating things with my code on the internet.
           My interest in web development and data science started in college when I was taking my first Data Analysis Class, programming in the language R. 
-          I found interest in the speed in which I can analyses using R and Python together.
+          I found interest in the speed in which I can perform analysis using R and Python together.
         </p>
         <p>
           Fast forward to today, I started my master's program in Data Science in the University of Colorado Boulder and branch out to new technologies, such as SQL.
@@ -74,73 +85,74 @@
         <p>
           Here are a few technologies I've been working with recently:
         </p>
-        <table cellspacing="10">
+        <table cellspacing="10" class="tech-summary">
           <tr>
-            <td>JavaScript(ES6+)</td>
-            <td>React</td>
+            <td><span class="fa-solid fa-caret-right"></span>  JavaScript(ES6+)</td>
+            <td><span class="fa-solid fa-caret-right"></span>  React</td>
           </tr>
           <tr>
-            <td>Python</td>
-            <td>SQL</td>
+            <td><span class="fa-solid fa-caret-right"></span>  Python</td>
+            <td><span class="fa-solid fa-caret-right"></span>  SQL</td>
           </tr>
           <tr>
-            <td>HTML</td>
-            <td>CSS</td>
+            <td><span class="fa-solid fa-caret-right"></span>  HTML</td>
+            <td><span class="fa-solid fa-caret-right"></span>  CSS</td>
           </tr>
         </table>
       </div>
       <div class = "col-lg-6">
-        <img class="circular" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-small-dog-breeds-cavalier-king-charles-spaniel-1598992577.jpg?crop=0.468xw:1.00xh;0.259xw,0&resize=480:*" alt="May Profile Picture">
+        <img class="profile-image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-small-dog-breeds-cavalier-king-charles-spaniel-1598992577.jpg?crop=0.468xw:1.00xh;0.259xw,0&resize=480:*" alt="May Profile Picture">
       </div>
   </div>
-  <div id="experiences">
-    <h2><strong>02. Experiences</strong></h2>
-    <h3><strong>Education</strong></h3>
-      <ul>
-        <li>Stony Brook University</li>
-        <li>University of Colorado Boulder</li>
-      </ul>
-    <h3><strong>Education</strong></h3>
-      <table cellspacing="10">
-        <thead>
-          <tr>
-            <th>Dates</th>
-            <th>Work</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>August 2021 - Present</td>
-            <td>System Analyst (LIS) at Enzo</td>
-          </tr>
-          <tr>
-            <td>July 2020 - July 2021</td>
-            <td>Junior Data Analyst at Hartig Electric</td>
-          </tr>
-            <td>September 2017 - May 2018</td>
-            <td>Student Government Senator at Stony Brook University</td>
-        </tbody>
-      </table>
+  <!-----------------------Experiences--------------------->
+  <div class="colored-pale-section">
+    <h2 class="heading-text"><strong>02. Experiences</strong></h2>
+    <div id="experiences">
+      <h3 class="sub-heading-text"><strong>Education</strong></h3>
+        <ul>
+          <li>Stony Brook University</li>
+          <li>University of Colorado Boulder</li>
+        </ul>
+      <h3 class="sub-heading-text"><strong>Career</strong></h3>
+        <table cellspacing="10">
+          <tbody>
+            <tr>
+              <td> Enzo </td>
+              <td>System Analyst (LIS) at Enzo</td>
+            </tr>
+            <tr>
+              <td>August 2021 - Present</td>
+              <td></td>
+            </tr>
+              <td>September 2017 - May 2018</td>
+              <td>Student Government Senator at Stony Brook University</td>
+          </tbody>
+        </table>
+    </div>
   </div>
-  <div id="abilities"> 
-    <h2>03. Abilities</h2>
+  <!----------------------Abilities------------------->
+  <div class="colored-blue-section"> 
+    <h2 id="abilities" class="heading-text">03. Abilities</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <br>
   </div>
-  <div id="projects">
-    <h2>04. Projects</h2>
+  <!----------------------Projects------------------->
+  <div class="colored-pale-section">
+    <h2 id="projects" class="heading-text">04. Projects</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <br>
   </div>
-  <div id="contact">
-    <h2>05. What's Next?</h2>
-    <p><h3>Get In Touch</h3></p>
-    <p>I would be happy to further discuss my experiences with you, simply shoot me an email or message me on LinkedIn! :)</p>
-    <button type="button" class="btn btn-outline-primary btn-lg"><span class="fa-solid fa-arrow-right"></span> Contact Me</button>
+  <!----------------------Contact------------------->
+  <div class="colored-blue-section">
+    <h2 id="contact" class="heading-text">05. What's Next?</h2>
+    <p><h3 class="sub-heading-text"><strong>Get In Touch</strong></h3></p>
+    <p class="contact-text">I would be happy to further discuss my experiences with you, simply shoot me an email or message me on LinkedIn! :)</p>
+    <button type="button" class="btn btn-outline-primary btn-lg"><span class="fa-solid fa-share"></span> Contact Me</button>
   </div>
+  <!----------------------Ending------------------->
   <div class="end-container">
-    <a class="footer-link" href="www.linkedin.com/in/may-chan123">LinkedIn</a>
-    <a class="footer-link" href="https://github.com/maylingchan22">GitHub</a>
+    <a class="footer-link" href="www.linkedin.com/in/may-chan123"><span class="fa-brands fa-linkedin" ></span> LinkedIn</a>
+    <a class="footer-link" href="https://github.com/maylingchan22"><span class="fa-brands fa-github-square"></span> GitHub</a>
     <p class="copyright">© Designed and Built by May Chan 2022.</p>
   </div>
 </body>

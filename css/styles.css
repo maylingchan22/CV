@@ -2,11 +2,32 @@
 body{
     margin: auto;
     text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
 }
 p {
     line-height: 2;
 }
-/**********Images**********/
+a:hover{
+    color: #EBEDF0;
+}
+/*********Mobile View****************/
+@media (max-width: 1028px) {
+    .global-network-img{
+        position: static;
+        transform: rotate(0);
+    }
+}
+/********Navigation Bar*****/
+.navbar-brand{
+    padding-left: 20px;
+}
+.navbar-nav.ms-auto{
+    padding-right: 20px;
+}
+/**********First Page Images**********/
 .sun-img{
     width: 100px;
     height: 100px;
@@ -18,60 +39,45 @@ p {
     position: relative;
     display: block;
     margin: auto;
+    transform: rotate(-10deg);
 }
 /*****Beginnning******/
-#greeting{
-    margin-top: 50px;
-}
 .beginning-container{
-    background-color: #355C7D;
+    background-color: #4B6F96;
+    color: 	#F8F8FF;
+    font-size: 1.2rem;
     padding-top: 200px;
 }
-/**********About-me************/
-
-#about-me{
-    background-color: #E3FDFD;
-    padding-top: 100px;
+#greeting{
+    margin-top: 50px;
+    font-family: 'Merriweather', serif;
+    margin: 50px auto 0 auto;
+    color: #283E54;
 }
-#experiences{
-    background-color: #E4F9F5;
-}
-#abilities{
-    background-color: #E3FDFD;
-}
-#projects{
-    background-color: #E4F9F5;
-}
-#contact{
-    background-color: #E3FDFD;
-}
-h1 {
-    color: #DAA520;
+.name-text{
+    color: #E0C955;
     font-size: 5.625rem;
-    font-family: 'Parisienne', cursive;
+    font-family: 'Dancing Script', cursive;
     margin: 50px auto 0 auto;
 }
-h2 {
-    font-family: 'Playball', cursive;
-    
-}
-h3{
+.job-text{
     font-size: 2.5rem;
-    color: #FF2E63;
-    font-weight: normal;
+    color: #E0A482;
+    font-weight: bold;
 }
-h4{
-    font-family: 'Inconsolata', monospace;
-    margin: 50px auto 0 auto;
-    color: #6A2C70;
+/**********Sections************/
+
+.colored-blue-section{
+    padding: 100px;
+    background-color: #E3FDFD;
 }
-a:hover{
-    color: #EBEDF0;
+.colored-pale-section{
+    padding: 100px;
+    background-color: #D8EAFE;
 }
-a{
-    color: #2D4059;
-    margin: 10px 20px;
-    text-decoration: none;
+.row.colored-blue-section{
+    padding: 100px;
+    background-color: #E3FDFD;
 }
 /**************************************CLASS SELECTORS**************************************/
 .container-fluid{
@@ -93,16 +99,55 @@ a{
     border-color: lightgrey;
     margin: 50px auto;
 }
-.circular{
+/********************About Me***********************/
+.profile-image{
     border-radius: 100%;
     padding-top: 50px
 }
+#about-me{
+    text-align: left;
+    
+}
+.tech-summary{ 
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+/*******************Experiences********************/
+#experiences{
+    text-align: left;
+}
+.heading-text{
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.sub-heading-text{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #F67280;
+    line-height: 1.2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*******************Abilities**********************/
+/*******************Projects***********************/
+/*******************Contact************************/
+/*******************Ending*************************/
 .end-container{
-    background-color: #444F5A;
+    background-color: #373D3D;
+    color: #B5C9C9;
     padding: 50px 0 20px;
 }
+.contact-text{
+    padding-bottom: 20px;
+}
+a{
+    color: #B5C9C9;
+    margin: 10px 20px;
+    text-decoration: none;
+}
 .copyright{
-    color: #2D4059;
     font-size: 0.90rem;
     padding: 20px 0;
 }
